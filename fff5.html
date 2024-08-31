@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>X O</title>
+    <style>
+        @font-face {
+    font-family:timer;
+    src:url("a.ttf");
+}
+        body{
+            
+            background:rgb(20, 1, 29); 
+          
+        }
+        #game{
+            width: 260px;
+            text-align: center;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            color:rgb(255, 8, 193);
+            margin:auto ;
+            font-weight: 500;
+            
+            
+            
+        }
+        #game .title{
+            border: rgb(255, 8, 193) 5px solid;
+            margin:5px 0px ;
+            margin-left:60px ;
+            padding:5px 50px;
+            box-shadow:0px 15px 20px rgba(183, 84, 250, 0.288);
+
+            
+            
+        }
+
+        span{
+            color:rgb(183, 0, 255); 
+            
+        }
+    .right {
+      width: 33.33%;
+      float: left;
+    }
+
+    .center {
+      width: 33.33%;
+      float: left;
+    }
+
+    .left {
+      width: 33.33%;
+      float: left;
+
+    }
+    ul li {
+      display: block;
+      width: 100%;
+    }
+        .square{
+           
+            width: 83px;
+            height: 83px;
+            border: rgb(255, 8, 193) 3px solid;
+            margin:px ;
+            font-size:50px ;
+            box-shadow:0px 15px 20px rgba(183, 84, 250, 0.288);}
+        .square:hover{
+            cursor: pointer;
+            background:rgba(255, 8, 193, 0.719); 
+            color:rgb(53, 2, 68);  
+        }
+      
+
+        
+        .count{
+            
+            height:200px ;
+            width:450px ;
+            border:rgb(255, 8, 193)  5px solid;
+            margin-top:30px ;
+            position: absolute;
+            bottom:20px ;
+            right:400px ;
+            text-align: center;
+            justify-content: space-between;
+            border-radius:5px ;
+            
+            
+        }
+         .content{
+            height:150px ;
+            width:180px ;
+            border: rgb(255, 8, 193) 5px solid;
+            background: #070707;
+            float: left;
+            margin:30px ;
+            border-radius:10px ;
+            font-family:timer;
+            font-size:150px ;
+        
+            
+            
+
+        }
+        .sp1{
+         position:absolute;
+         left:100px ;
+         color:rgb(183, 0, 255); 
+         font-weight:90;
+         }
+        #content1{
+         position:relative;
+         top:-10px;
+         left:200px ;
+
+
+         
+
+        }
+        .sp2{
+         position:absolute;
+         right:120px ;
+         color:rgb(183, 0, 255); 
+        }
+        #content2{
+         position:relative;
+         top:-228px;
+         right:10px ;
+         
+        }
+        @media(min-width:950px) and (max-width:1150px){
+            .count{
+            
+            height:200px ;
+            width:450px ;
+            border:rgb(255, 8, 193)  5px solid;
+            margin-top:30px ;
+            position: absolute;
+            top:340px;
+            bottom:20px ;
+            right:240px ;
+            text-align: center;
+            justify-content: space-between;
+            border-radius:5px ;}
+        };
+      /*  @media(max-width:950px){
+            .count{
+            background: #b91010;
+            height:200px ;
+            width:450px ;
+            border:rgb(255, 8, 193)  5px solid;
+            margin-top:30px ;
+            position: absolute;
+            top:340px;
+            bottom:20px ;
+            right:240px ;
+            text-align: center;
+            justify-content: space-between;
+            border-radius:5px ;}
+        };*/
+        
+            
+        
+    </style>
+</head>
+<body>
+    <div id="game">
+
+        <div class="title"><span>X O </span>GAME</div>
+        <div  class="right">
+        <ul>
+    <li>
+        <div class="square" id="item1" onclick="game(this.id)"></div>
+    </li>
+    <li>
+        <div  class="square" id="item2" onclick="game(this.id)"></div>
+    </li>
+    <li>
+        <div class="square" id="item3" onclick="game(this.id)"></div>
+    </li>
+    </ul>
+</div>
+<div  class="center">
+       <ul>
+    
+    <li>
+        <div  class="square" id="item4" onclick="game(this.id)"></div>
+    </li>
+    <li>
+        <div  class="square" id="item5" onclick="game(this.id)"></div>
+    </li>
+    <li>
+        <div  class="square" id="item6" onclick="game(this.id)"></div>
+    </li>
+    
+    </ul>
+</div>
+<div  class="left">
+<ul>
+<li>
+        <div class="square" id="item7" onclick="game(this.id)" ></div>
+    </li>
+    <li>
+        <div class="square" id="item8" onclick="game(this.id)"></div>
+    </li>
+    <li>
+        <div class="square" id="item9" onclick="game(this.id)"></div>
+    </li>
+    
+        </ul>
+    </div>
+    <div class="count">
+        <div class="sp1">O</div><div class="sp2">X</div>
+    <div class="content" id="content1">0</div>
+    <div class="content" id="content2">0</div>
+    </div>
+
+    <script src="j4.js"></script>
+</body>
+</html>

@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+          @font-face {
+    font-family:timer;
+    src:url("a.ttf");
+}
+body{   padding: 0;
+    margin: 0;
+    box-sizing: 0;
+    background:rgb(20, 1, 29);
+    /*font-family:timer ;*/
+text-align: center;} 
+#xvso{
+   
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   position: absolute;
+   top: 20%;
+   left:25% ;
+ 
+    
+}
+#x{
+    box-shadow:0px 2px 4px rgba(195, 77, 231, 0.418) ;
+    background: black;
+    height:170px ;
+    width:200px ;
+    z-index:10 ;
+float: left;
+   font-size:150px ;
+  color:  rgb(255, 8, 193);
+  border-radius:10px ;
+  text-align: center;
+
+}
+.O{ box-shadow:0px 2px 4px rgba(195, 77, 231, 0.418) ;
+    background-color: black;
+    height:170px ;
+    width:200px ;
+    margin-top: 0;
+    margin-bottom: 0;
+    z-index:10 ;
+    float: left;
+   font-size:150px ;
+   color: rgb(255, 8, 193);
+   border-radius:10px ;
+   text-align: center;
+
+
+}
+.vs{ text-shadow:0px 2px 4px rgba(206, 103, 238, 0.5) ;
+    font-size:100px ;
+  z-index:10 ;
+  float: left;
+   color:rgb(255, 8, 193);
+   border-radius:10px ;
+
+
+}
+
+#content{
+    color:rgb(255, 8, 193);
+}
+.contianer{
+    width:400px ;
+    position: absolute;
+    bottom:25% ;
+    left:33%;
+    
+}
+    #blocks .block1{
+    box-shadow:0px 2px 4px rgba(195, 77, 231, 0.603) ;
+    height:8px;
+    width:30px ; 
+    margin-left:70px ;
+    margin-top: 5px;
+    justify-content: center;
+    background: rgb(255, 8, 193);
+    float: left;
+    border-radius:10px ;
+
+}
+#blocks .block2{
+    box-shadow:0px 2px 4px rgba(195, 77, 231, 0.603) ;
+    height:0px;
+    width:0px ; 
+    margin-top: 5px;
+    margin-left:70px ;
+    background: rgb(255, 8, 193);
+    float: left;
+    border-radius:10px ;
+
+}
+#blocks .block3{
+    box-shadow:0px 2px 4px rgba(195, 77, 231, 0.603) ;
+    height:0px;
+    width:0px ; 
+    margin-top: 5px;
+    margin-left:70px ;
+    background: rgb(255, 8, 193);
+    float: left;
+    border-radius:10px ;
+
+}
+#blocks .block4{
+    box-shadow:0px 2px 4px rgba(195, 77, 231, 0.603) ;
+    height:8px;
+    width:0px ; 
+    margin-top: 5px;
+    margin-left:70px ;
+    background:rgb(255, 8, 193);
+    float: left;
+    border-radius:10px ;
+}
+
+   
+    </style>
+</head>
+<body>
+    <div id="xvso">
+<ul></ul>    
+<div id="x">
+    X
+</div></ul> 
+<ul><div class="vs" >VS</div></ul>
+<ul><div class="O">O</div></ul>
+</div>
+<div class="contianer">
+    <marquee id="content"  direction="right">
+        <img src="h.png"></marquee>
+        <div id="contianer5">  
+            <div id="blocks"   >
+           <div class="block1"></div>
+           <div class="block2"></div>
+           <div class="block3"></div>
+           <div class="block4"></div>
+           
+        </div> 
+</div>
+<script src="j5.js"></script> 
+
+</body>
+</html>
